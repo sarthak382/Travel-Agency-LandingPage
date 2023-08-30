@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+/* body{
+  min-height: 100vh;
+  width: 100%;
+  background: #EEECEB;
+} */
+footer{
+  /* position: fixed; */
+  background: linear-gradient( to right, #16222a, #284553);
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+footer::before{
+  content: '';
+  position: absolute;
+  background: #AFAFB6;
+}
+footer .content{
+  max-width: 1250px;
+ 
+  margin: auto;
+  padding: 30px 40px 40px 40px;
+}
+footer .content .top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+footer .content .top .logo-details{
+  color:#fff;
+  font-size: 20px;
+}
+
+footer .content .top .logo-details .logo_name
+{
+  color:rgb(34, 136, 196); 
+  font-weight: 500px; 
+  font-size: 25px;
+}
+footer .content .top .media-icons{
+  display: flex;
+  height: 200px;
+}
+footer .content .top .media-icons a{
+  height: 40px;
+  width: 40px;
+  margin: 4px;
+  border-radius:50%;
+  text-align: center;
+  line-height: 40px;
+  color: #fff;
+  font-size: 17px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+footer .top .media-icons a:nth-child(1){
+  background: #4267B2;
+}
+footer .top .media-icons a:nth-child(1):hover{
+  color: #4267B2;
+  background: #fff;
+}
+footer .top .media-icons a:nth-child(2){
+  background: #1DA1F2;
+}
+footer .top .media-icons a:nth-child(2):hover{
+  color: #1DA1F2;
+  background: #fff;
+}
+footer .top .media-icons a:nth-child(3){
+  background: #3a3536;
+}
+footer .top .media-icons a:nth-child(3):hover{
+  color: #3a3536;
+  background: #fff;
+}
+footer .top .media-icons a:nth-child(4){
+  background: #FF0000;
+}
+footer .top .media-icons a:nth-child(4):hover{
+  color: #FF0000;
+  background: #fff;
+}
+
+
+footer .bottom-details{
+  width: 100%; 
+  display: flex;
+  justify-content: space-between;
+  
+  
+}
+footer .bottom-details p{
+  color: #fff;
+}
+footer .bottom-details a{
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .bottom-details a:hover{
+  opacity: 1;
+  text-decoration: underline;
+}
+footer .bottom-details a{
+  margin-right: 10px;
+}
+@media (max-width: 900px) {
+  footer .content .link-boxes{
+    flex-wrap: wrap;
+  }
+  footer .content .link-boxes .input-box{
+    width: 40%;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 700px){
+  footer{
+    position: relative;
+  }
+  footer .content .top .logo-details{
+    font-size: 26px;
+  }
+  footer .content .top .media-icons a{
+    height: 35px;
+    width: 45px;
+    font-size: 14px;
+    line-height: 35px;
+  }
+  
+  footer .bottom-details .bottom_text span,
+  footer.bottom-details .bottom_text a{
+    font-size: 12px;
+  }
+}
+@media (max-width: 520px){
+  footer::before{
+    top: 145px;
+  }
+  footer .content .top{
+    flex-direction: column;
+  }
+  .content .top .media-icons{
+    margin-top: 16px;
+  }
+  footer .content .link-boxes .box{
+    width: calc(100% / 2 - 10px);
+  }
+  footer .content .link-boxes .input-box{
+    width: 100%;
+  }
+}

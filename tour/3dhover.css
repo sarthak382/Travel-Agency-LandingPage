@@ -1,0 +1,127 @@
+#intro{
+    height: 400px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+}
+
+
+
+#imggall .container
+{
+    background-color: rgb(255, 255, 255);
+    /* width: 1280px;
+    margin: 70px auto 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap; */
+}
+#imggall .container .box{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    background: rgb(255, 255, 255);
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+
+#imggall .container .box .imgBox
+{
+   position: relative;
+   overflow: hidden;
+}
+#imggall .container .box .imgBox img{
+   max-width: 100%;
+  transition: transform 2s;
+  
+}
+
+#imggall .container .box:hover .imgBox img{
+    transform: scale(1.2);
+}
+
+#imggall .container .box .details
+{
+   position: absolute;
+    top: 10px;
+    Left: 10px;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0,0,0,.8);
+    transform: scaleY(0);
+    transition: transform .5s;
+}
+
+#imggall .container .box:hover .details
+{
+   transform: scaleY(1);
+}
+
+#imggall .container .box .details .contentt
+{
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   text-align: center;
+   padding: 15px;
+   color: #fff;
+}
+
+#imggall .container .box .details .contentt h2
+{
+   margin: 0;
+   padding: 0;
+   font-size: 20px;
+   color: #ff0;
+}
+
+#imggall .container .box .details .contentt p
+{
+   margin: 10px 0 0;
+   padding: 0;
+}
+@media (max-width: 333px){
+    #imggall .container .box{
+        
+        width: 200px;
+        height: 200px;
+    
+    }
+}                           
+
+.yo{
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.5s ease-in-out;
+}
+
+.yoo{
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 1.0s ease-in-out;
+}
+
+.yooo{
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 1.5s ease-in-out;
+}
+
+.yom{
+    margin-bottom: 30px;
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.5s ease-in-out;
+    
+}
+
+.push{
+    opacity: 0;
+    transform: translateY(80px);
+}
+.push-right{
+    opacity: 0;
+    transform: translateX(-60px);
+}

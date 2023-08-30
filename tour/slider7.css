@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+.intro{
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to right,#1488cc, #2b32b2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} 
+#avenger .ogmill{
+  /* max-width: 1000px; */
+  position: relative;
+  margin-top: 50px;
+  
+}
+
+
+#avenger .millp{
+  margin-left: 13%;
+  background-color: beige;
+    width: 700px;
+    height: 400px;
+}
+
+#avenger .millp h3{
+  padding-top: 50px;
+  padding-left: 40px;
+}
+
+#avenger .millp p{
+  padding-left: 40px;
+  padding-top: 10px;
+}
+
+
+#avenger .millp a{
+  padding-left: 40px;
+}
+
+
+
+#avenger .mill2{
+    position: absolute;
+    top: 70%;
+    left: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+
+#avenger .millp{
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.5s ease-in-out;
+}
+
+
+#avenger .mill2{
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.5s ease-in-out;
+}
+
+
+#avenger .push-right{
+  opacity: 0;
+  transform: translateX(50px);
+ 
+}
+#avenger .push-left{
+  opacity: 0;
+  transform: translateX(-50px);
+} 
+
+
+#avenger #intro{
+  height: 500px;
+  width: 100%;
+  background: rgb(255, 255, 255);
+}
+
+
+
+
+
+
+
+
+#avenger .img-slider{
+  position: relative;
+  width: 700px;
+  height: 100px;
+  margin: 10px;
+  background: #1D212B;
+}
+
+#avenger .img-slider .slidee{
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  clip-path: circle(0% at 0 50%);
+}
+
+#avenger .img-slider .slidee.activee{
+  clip-path: none;
+  transition: 2s;
+  transition-property: clip-path;
+}
+
+#avenger .img-slider .slidee img{
+  z-index: 1;
+  width: 100%;
+  border-radius: 5px;
+}
+
+#avenger .img-slider .slidee .info{
+  position: absolute;
+  top: 0;
+  padding: 15px 30px;
+}
+
+#avenger .img-slider .slidee .info h2{
+  color: #fff;
+  font-size: 45px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+#avenger .img-slider .slidee .info p{
+  color: #fff;
+  background: rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  width: 60%;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#avenger .img-slider .navigation{
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#avenger .img-slider .navigation .btn{
+  background: rgba(255, 255, 255, 0.5);
+  width: 15px;
+  height: 15px;
+  padding: 2px 2px 2px 2px;
+  margin: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#avenger .img-slider .navigation .btn.activee{
+  background: #2696E9;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 1212px){
+
+  #avenger .millp h3{
+    padding-top: 50px;
+    padding-left: 35px;
+  }
+  
+  #avenger .millp p{
+    padding-left: 35px;
+    padding-top: 10px;
+  }
+  
+  
+  #avenger .millp a{
+    padding-left: 35px;
+  }
+
+  #avenger .millp{
+    margin-left: 13%;
+    background-color: beige;
+    width: 600px;
+    height: 375px;
+  }
+
+
+  #avenger .img-slider{
+    width: 600px;
+    height: 375px;
+  }
+
+  #avenger .img-slider .slidee .info{
+    padding: 10px 25px;
+  }
+
+  #avenger .img-slider .slidee .info h2{
+    font-size: 35px;
+  }
+
+  #avenger .img-slider .slidee .info p{
+    width: 70%;
+    font-size: 15px;
+  }
+
+  #avenger .img-slider .navigation{
+    bottom: 25px;
+  }
+
+  #avenger .img-slider .navigation .btn{
+    width: 10px;
+    height: 10px;
+    margin: 8px;
+  }
+}
+
+@media (max-width: 1048px){
+
+ 
+
+
+  #avenger .millp h3{
+    padding-top: 22px;
+    padding-left: 30px;
+  }
+  
+  #avenger .millp p{
+    padding-left: 30px;
+    padding-top: 5px;
+    font-size: 13px;
+  }
+  
+  
+  #avenger .millp a{
+    padding-left: 30px;
+    font-size: 13px;
+  }
+
+  #avenger .millp{
+    margin-left: 13%;
+    background-color: beige;
+    width: 400px;
+    height: 250px;
+  }
+
+
+  #avenger .img-slider{
+    width: 400px;
+    height: 250px;
+  }
+
+  #avenger .img-slider .slidee .info{
+    padding: 10px 20px;
+  }
+
+  #avenger .img-slider .slidee .info h2{
+    font-size: 30px;
+  }
+
+  #avenger .img-slider .slidee .info p{
+    width: 80%;
+    font-size: 13px;
+  }
+
+  #avenger .img-slider .navigation{
+    bottom: 15px;
+  }
+
+  #avenger .img-slider .navigation .btn{
+    width: 8px;
+    height: 8px;
+    margin: 6px;
+  }
+}
+
+@media (max-width: 767px){
+
+  #avenger .millp h3{
+    padding-top: 6px;
+    padding-left: 6px;
+    font-size: 20px;
+  }
+  
+  #avenger .millp p{
+    padding-left: 6px;
+    padding-top: 1px;
+    font-size: 11px;
+  }
+  
+  
+  #avenger .millp a{
+    padding-left: 6px;
+    font-size: 11px;
+  }
+
+  #avenger .millp{
+    margin-left: 13%;
+    background-color: beige;
+    width: 350px;
+    height: 200px;
+  }
+
+
+  #avenger .img-slider{
+    width: 320px;
+    height: 200px;
+  }
+
+  #avenger .img-slider .slidee .info{
+    padding: 5px 10px;
+  }
+
+  #avenger .img-slider .slidee .info h2{
+    font-size: 25px;
+  }
+
+  #avenger .img-slider .slidee .info p{
+    width: 90%;
+    font-size: 11px;
+  }
+
+  #avenger .img-slider .navigation{
+    bottom: 10px;
+  }
+}
+@media (max-width: 567px){
+  #avenger .millp{
+    margin-left: 1%;
+  }
+}
+
+@media (max-width: 566px){
+  #avenger .millp{
+    width: 320px;
+    margin-left: 14%;
+  }
+  #avenger .mill2{
+    position: absolute;
+    top: 90%;
+    left: 14%;
+    
+    
+}
+}
+
+@media (max-width: 397px){
+  #avenger .millp{
+    width: 320px;
+    margin-left: 9%;
+  }
+  #avenger .mill2{
+    position: absolute;
+    top: 90%;
+    left: 9%;
+    
+    
+}
+}
+
+@media (max-width: 373px){
+  #avenger .millp{
+    width: 320px;
+    margin-left: 5%;
+  }
+  #avenger .mill2{
+    position: absolute;
+    top: 90%;
+    left: 5%;
+    
+    
+}
+}
+
+
+@media (max-width: 373px){
+  #avenger .millp{
+    width: 320px;
+    margin-left: 2%;
+  }
+  #avenger .mill2{
+    position: absolute;
+    top: 90%;
+    left: 2%;
+    
+    
+}
+}
+
+
+@media (max-width: 348px){
+
+  #avenger .millp h3{
+    padding-top: 6px;
+    padding-left: 6px;
+    font-size: 10px;
+  }
+  
+  #avenger .millp p{
+    padding-left: 6px;
+    padding-top: 1px;
+    font-size: 8px;
+  }
+  
+  
+  #avenger .millp a{
+    padding-left: 6px;
+    font-size: 8px;
+  }
+
+  #avenger .millp{
+    width: 200px;
+    height: 160px;
+  }
+
+
+  #avenger .img-slider{
+    width: 200px;
+    height: 160px;
+  }
+
+  #avenger .img-slider .slidee .info{
+    padding: 5px 10px;
+  }
+
+  #avenger .img-slider .slidee .info h2{
+    font-size: 10px;
+  }
+
+  #avenger .img-slider .slidee .info p{
+    width: 90%;
+    font-size: 8px;
+  }
+
+  #avenger .img-slider .navigation{
+    bottom: 10px;
+  }
+}
